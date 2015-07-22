@@ -46,14 +46,7 @@ import java.net.URLEncoder;
  * A Servlet for handeling OAuth flow.
  * This OAuth Servlet  is only provided as an example and is provided as-is
  */
- @WebServlet(name = "oauth", urlPatterns = { "/oauth/*", "/oauth" }, initParams = {
-        // clientId is 'Consumer Key' in the Remote Access UI
-        @WebInitParam(name = "clientId", value = "3MVG9Y6d_Btp4xp5.8rxMgsAYhFKebyWfqGa3w9A0QEM6cl9HDaRXj3Zts0F2.I2usan63PRFwKPguMSQvt6N"),
-        // clientSecret is 'Consumer Secret' in the Remote Access UI
-        @WebInitParam(name = "clientSecret", value = "1249770119982504789"),
-        // This must be identical to 'Callback URL' in the Remote Access UI
-        @WebInitParam(name = "redirectUri", value = "https://demorunthroughvivek.herokuapp.com/sdk/callback.html"),
-        @WebInitParam(name = "environment", value = "https://login.salesforce.com"), })
+ 
 public class OAuthServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
