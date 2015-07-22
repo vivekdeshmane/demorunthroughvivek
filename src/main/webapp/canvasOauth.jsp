@@ -36,6 +36,11 @@ if (loggedIn) {
 // Only displaying part of the OAuth token for better formatting.
 Sfdc.canvas.byId("oauth").innerHTML = Sfdc.canvas.oauth.token()
 .substring(1,40) + "…";
+var ctxlink = Sfdc.canvas.byId("ctxlink");
+var client = Sfdc.canvas.oauth.client();
+ctxlink.onclick=function() {
+Sfdc.canvas.client.ctx(callback, client)};
+}
 }
 login.onclick=loginHandler;
 });
@@ -47,11 +52,7 @@ return;
 alert("Payload: ", msg.payload);
 }
 
-var ctxlink = Sfdc.canvas.byId("ctxlink");
-var client = Sfdc.canvas.oauth.client();
-ctxlink.onclick=function() {
-Sfdc.canvas.client.ctx(callback, client)};
-}
+
 </script>
 <h1 id="header">Force.com Canvas OAuth App</h1>
 <div>
