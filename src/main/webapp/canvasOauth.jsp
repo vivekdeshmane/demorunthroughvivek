@@ -39,12 +39,27 @@ Sfdc.canvas.byId("oauth").innerHTML = Sfdc.canvas.oauth.token()
 }
 login.onclick=loginHandler;
 });
+function callback(msg) {
+if (msg.status !== 200) {
+alert("Error: " + msg.status);
+return;
+}
+alert("Payload: ", msg.payload);
+}
+
+var ctxlink = Sfdc.canvas.byId("ctxlink");
+var client = Sfdc.canvas.oauth.client();
+ctxlink.onclick=function() {
+Sfdc.canvas.client.ctx(callback, client)};
+}
 </script>
 <h1 id="header">Force.com Canvas OAuth App</h1>
 <div>
 access_token = <span id="oauth"></span>
 </div>
 <div>
+<a id="ctxlink" href="#">Get Context</a>
+
 <a id="login" href="#">Login</a><br/>
 </div>
 </body>
