@@ -39,6 +39,20 @@ Sfdc.canvas.byId("oauth").innerHTML = Sfdc.canvas.oauth.token()
 }
 login.onclick=loginHandler;
 });
+var sr = JSON.parse('<%=signedRequestJson%>');
+// Reference the Chatter user's URL from Context.Links object.
+var chatterUsersUrl = sr.context.links.chatterUsersUrl;
+// Make an XHR call back to salesforce through the supplied browser proxy.
+Sfdc.canvas.client.ajax(chatterUsersUrl,
+{client : sr.client,
+success : function(data){
+// Make sure the status code is OK.
+if (data.status === 200) {
+// Alert with how many Chatter users were returned.
+alert("Got back " + data.payload.users.length +
+" users"); // Returned 2 users
+}
+}});
 </script>
 <h1 id="header">Force.com Canvas OAuth App</h1>
 <div>
