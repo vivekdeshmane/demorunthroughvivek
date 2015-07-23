@@ -8,6 +8,16 @@
         <script type="text/javascript" src="/sdk/js/canvas-all.js"></script>
         <script type="text/javascript" src="/scripts/json2.js"></script>
         <script type="text/javascript" src="/scripts/chatter-talk.js"></script>
+<script type="text/javascript" defer="defer">
+    var signedRequest = document.getElementById("<%= hdnSignedRequest.ClientID %>").value;
+
+    function SendValue(pValue) {
+        sr = JSON.parse(signedRequest);
+        Sfdc.canvas.client.publish(sr.client, { 
+            name: 'myns.sendVal', 
+            payload: { value : pValue} });
+    }
+</script>
    </head>
     <body>
     <div id="page">
