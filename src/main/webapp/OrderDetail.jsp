@@ -18,10 +18,10 @@
 
             window.onload=function() {
 			alert('vbbb');
-   var signedRequest = <%=request.getParameter("hdnSignedRequest")%>
-alert('signedRequest'+signedRequest);
+  
    
-        sr = JSON.parse(signedRequest);
+        sr = JSON.parse('<%=request.getParameter("hdnSignedRequest")%>');
+		alert('sr'+sr);
         Sfdc.canvas.client.publish(sr.client, { 
             name: 'myns.sendVal', 
             payload: { value : 'vvvvv'} });
