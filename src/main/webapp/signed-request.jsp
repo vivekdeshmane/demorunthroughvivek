@@ -78,13 +78,14 @@ POSSIBILITY OF SUCH DAMAGE.
                     Sfdc.canvas.byId('status').innerHTML = data.statusText;
                     Sfdc.canvas.byId("speech-input-field").value = "";
                 });
-				SendValue(sr);
+				SendValue();
             });
- function SendValue(sr) {
+ function SendValue() {
         //sr = JSON.parse(signedRequest);
+		var sr = JSON.parse('<%=signedRequestJson%>');
         Sfdc.canvas.client.publish(sr.client, { 
             name: 'myns.sendVal', 
-            payload: { value : '1234568'} });
+            payload: { value : '1234568'} }); 
     }
 	
         </script>
