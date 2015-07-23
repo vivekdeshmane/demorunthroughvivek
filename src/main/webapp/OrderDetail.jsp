@@ -24,7 +24,7 @@
         <script type="text/javascript" src="/scripts/json2.js"></script>
         <script type="text/javascript" src="/scripts/chatter-talk.js"></script>
 <script type="text/javascript" defer="defer">
-    //var signedRequest = document.getElementById("<%= hdnSignedRequest.ClientID %>").value;
+    
 
     function SendValue(pValue) {
         sr = JSON.parse('<%=signedRequestJson%>');
