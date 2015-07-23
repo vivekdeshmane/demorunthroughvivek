@@ -17,8 +17,8 @@
             }
 
             window.onload=function() {
-			alert('hhhhhh');
-   var signedRequest = request.getParameter("hdnSignedRequest").value;
+			alert('vbbb');
+   var signedRequest = <%=request.getParameter("hdnSignedRequest")%>
 alert('signedRequest'+signedRequest);
    
         sr = JSON.parse(signedRequest);
