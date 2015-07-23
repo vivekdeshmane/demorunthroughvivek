@@ -23,7 +23,7 @@
             }
 
             window.onload=function() {
-			alert('vbbb1122');
+			alert('<%=signedRequestJson%>');
   
    
         sr = JSON.parse('<%=signedRequestJson%>');
