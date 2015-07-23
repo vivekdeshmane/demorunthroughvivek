@@ -1,13 +1,7 @@
 <%@ page import="java.util.Map" %>
 <%
-    // Pull the signed request out of the request body and verify/decode it.
-    Map<String, String[]> parameters = request.getParameterMap();
-    String[] signedRequest = parameters.get("signed_request");
-    if (signedRequest == null) {%>
-        This App must be invoked via a signed request!<%
-        return;
-    }
-    String yourConsumerSecret=System.getenv("CANVAS_CONSUMER_SECRET");
+    
+    
     String signedRequestJson = request.getParameter("hdnSignedRequest");
 %>
 <!DOCTYPE html>
