@@ -84,10 +84,10 @@ POSSIBILITY OF SUCH DAMAGE.
     <body>
     <div id="page">
         <div id="content">
-            <div id="header">
+            <!--<div id="header">
                 <h1 >Hello <span id='fullname'></span>!</h1>
                 <h2>Welcome to the Force.com Canvas Java Quick Start Template!</h2>
-            </div>
+            </div>-->
 
             <div id="canvas-content">
                 <h1>Canvas Request</h1>
