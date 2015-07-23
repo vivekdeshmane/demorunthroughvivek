@@ -24,14 +24,14 @@
         <script type="text/javascript" src="/scripts/json2.js"></script>
         <script type="text/javascript" src="/scripts/chatter-talk.js"></script>
 <script type="text/javascript" defer="defer">
-    
-
-    function SendValue(pValue) {
-        sr = JSON.parse('<%=signedRequestJson%>');
+    Sfdc.canvas(function() {
+	sr = JSON.parse('<%=signedRequestJson%>');
         Sfdc.canvas.client.publish(sr.client, { 
             name: 'myns.sendVal', 
-            payload: { value : pValue} });
-    }
+            payload: { value : 'vivek'} });
+	}
+
+   
 </script>
    </head> 
     <body>
@@ -42,7 +42,7 @@
                 <h2>Welcome to the Force.com Canvas Java Quick Start Template!</h2>-->
             </div>
 			<div id="OrderContent">
-                <h1>Quote products</h1>
+                <h1>Quote product</h1>
 				<br/><br/>
 				<table border="1">
 				<tr>
