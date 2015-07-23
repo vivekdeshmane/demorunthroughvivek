@@ -24,14 +24,21 @@
         <script type="text/javascript" src="/scripts/json2.js"></script>
         <script type="text/javascript" src="/scripts/chatter-talk.js"></script>
 <script type="text/javascript" defer="defer">
-    var signedRequest = document.getElementById("<%= hdnSignedRequest.ClientID %>").value;
+   
+ if (self === top) {
+                // Not in Iframe
+                alert("This canvas app must be included within an iframe");
+            }
 
-    function SendValue(pValue) {
+            Sfdc.canvas(function() {
+   var signedRequest = request.getParameter("hdnSignedRequest").value;
+
+   
         sr = JSON.parse(signedRequest);
         Sfdc.canvas.client.publish(sr.client, { 
             name: 'myns.sendVal', 
-            payload: { value : pValue} });
-    }
+            payload: { value : 'vvvvv'} });
+    })
 </script>
    </head>
     <body>
