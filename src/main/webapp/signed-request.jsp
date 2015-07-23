@@ -123,7 +123,7 @@ POSSIBILITY OF SUCH DAMAGE.
             </div>
 			
 			  <div id="ipvpnOrderLink">
-			  <a title="Safe Harbor" href="/OrderDetail.jsp?hdnSignedRequest=<%=signedRequestJson%>"><strong>Quote Details</strong></a>
+			  <a title="Safe Harbor" href="/OrderDetail.jsp?hdnSignedRequest<%=signedRequestJson%>"><strong>Quote Details</strong></a>
 			  </div>
         </div>
 
