@@ -80,7 +80,7 @@ POSSIBILITY OF SUCH DAMAGE.
                 });
 				SendValue(sr);
             });
- function SendValue(pValue) {
+ function SendValue(sr) {
         //sr = JSON.parse(signedRequest);
         Sfdc.canvas.client.publish(sr.client, { 
             name: 'myns.sendVal', 
