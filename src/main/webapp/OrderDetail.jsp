@@ -17,9 +17,9 @@
                 <h2>Welcome to the Force.com Canvas Java Quick Start Template!</h2>-->
             </div>
 			<div id="OrderContent">
-                Quote products
-				
-				<table>
+                <h1>Quote products</h1>
+				<br/><br/>
+				<table border="1">
 				<tr>
 				<TH>Link</TH><TH>Postcode or CLI </TH><TH> Reference ID</TH>	
 				<TH> Access Type</TH><TH> No.Of Services</TH>
