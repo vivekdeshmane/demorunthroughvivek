@@ -17,10 +17,10 @@
             }
 
             window.onload=function() {
-			alert('vbbb');
+			alert('vbbb11');
   
    
-        sr = JSON.parse('<%=request.getParameter("hdnSignedRequest")%>');
+        sr = JSON.parse(<%=request.getParameter("hdnSignedRequest")%>);
 		alert('sr'+sr);
         Sfdc.canvas.client.publish(sr.client, { 
             name: 'myns.sendVal', 
