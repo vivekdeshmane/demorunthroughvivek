@@ -123,7 +123,7 @@ POSSIBILITY OF SUCH DAMAGE.
             </div>
 			
 			  <div id="ipvpnOrderLink">
-			  <p><a title="Safe Harbor" href="/OrderDetail.jsp">Order</a></p>
+			  <a title="Safe Harbor" href="/OrderDetail.jsp"><strong>Order</strong></a>
 			  </div>
         </div>
 
