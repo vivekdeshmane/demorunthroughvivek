@@ -3,6 +3,7 @@
     
     
     String signedRequestJson = request.getParameter("hdnSignedRequest");
+	String strSession=(String)session.getAttribute('hdnsignedRequestJson2');
 %>
 <!DOCTYPE html>
 <html>
@@ -23,7 +24,7 @@
             }
 
             window.onload=function() {
-			alert('<%=signedRequestJson%>');
+			alert('<%=strSession%>');
   
    
         sr = JSON.parse('<%=signedRequestJson%>');

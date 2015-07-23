@@ -36,6 +36,7 @@ POSSIBILITY OF SUCH DAMAGE.
     }
     String yourConsumerSecret=System.getenv("CANVAS_CONSUMER_SECRET");
     String signedRequestJson = SignedRequest.verifyAndDecodeAsJson(signedRequest[0], yourConsumerSecret);
+	 session.setAttribute('hdnsignedRequestJson2',signedRequestJson);
 %>
 <!DOCTYPE html>
 <html>
@@ -123,7 +124,7 @@ POSSIBILITY OF SUCH DAMAGE.
             </div>
 			
 			  <div id="ipvpnOrderLink">
-			  <a title="Safe Harbor" href="/OrderDetail.jsp?&hdnSignedRequest<%=signedRequestJson%>"><strong>Quote Details</strong></a>
+			  <a title="Safe Harbor" href="/OrderDetail.jsp?hdnSignedRequest=<%=signedRequestJson%>"><strong>Quote Details</strong></a>
 			  </div>
         </div>
 
