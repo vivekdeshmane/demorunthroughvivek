@@ -33,7 +33,7 @@
             payload: { value : pValue} });
     }
 </script>
-   </head>
+   </head> 
     <body>
     <div id="page">
         <div id="content">
