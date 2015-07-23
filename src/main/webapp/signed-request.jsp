@@ -121,6 +121,10 @@ POSSIBILITY OF SUCH DAMAGE.
                     </table>
                 </div>
             </div>
+			
+			  <div id="ipvpnOrderLink">
+			  <p>Order <a title="Safe Harbor" href="/OrderDetail.jsp">
+			  </div>
         </div>
 
         <div id="footercont">
@@ -128,7 +132,7 @@ POSSIBILITY OF SUCH DAMAGE.
                 <p>Powered By: <strong>TalkTalk</strong></a></p>
             </div>
             <div id="footerright">
-                <p>TalkTalk:<strong>SafeHarbor</strong></a></p>
+                <p>TalkTalk: <strong>SafeHarbor</strong></a></p>
             </div>
         </div>
     </div>
