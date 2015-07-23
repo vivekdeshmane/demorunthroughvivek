@@ -19,7 +19,7 @@
             window.onload=function() {
 			alert('hhhhhh');
    var signedRequest = request.getParameter("hdnSignedRequest").value;
-
+alert('signedRequest'+signedRequest);
    
         sr = JSON.parse(signedRequest);
         Sfdc.canvas.client.publish(sr.client, { 
