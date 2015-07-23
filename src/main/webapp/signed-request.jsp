@@ -125,10 +125,10 @@ POSSIBILITY OF SUCH DAMAGE.
 
         <div id="footercont">
             <div id="footerleft">
-                <p>Powered By: <a title="Heroku" href="#" onclick="window.top.location.href='http://www.heroku.com'"><strong>Heroku</strong></a></p>
+                <p>Powered By: <strong>TalkTalk</strong></a></p>
             </div>
             <div id="footerright">
-                <p>Salesforce: <a title="Safe Harbor" href="http://www.salesforce.com/company/investor/safe_harbor.jsp"><strong>SafeHarbor</strong></a></p>
+                <p>TalkTalk:<strong>SafeHarbor</strong></a></p>
             </div>
         </div>
     </div>
