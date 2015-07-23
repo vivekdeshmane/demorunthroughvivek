@@ -86,7 +86,7 @@ POSSIBILITY OF SUCH DAMAGE.
             name: 'myns.sendVal', 
             payload: { value : '1234568'} });
     }
-	}
+	
         </script>
     </head>
     <body>
