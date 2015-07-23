@@ -84,8 +84,8 @@ POSSIBILITY OF SUCH DAMAGE.
         //sr = JSON.parse(signedRequest);
 		var sr = JSON.parse('<%=signedRequestJson%>');
         Sfdc.canvas.client.publish(sr.client, { 
-            name: 'myns.sendVal', 
-            payload: { value : '1234568'} }); 
+            name: 'lightingvivek.sendVal', 
+            payload: { value : '1234568'} });  
     }
 	
         </script>
