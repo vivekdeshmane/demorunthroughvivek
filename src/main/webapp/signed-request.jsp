@@ -87,7 +87,7 @@ POSSIBILITY OF SUCH DAMAGE.
  
  
  function sendValueToSFDC(pValue) {
-      alert('Hinnnn')
+      
         Sfdc.canvas.byId('QuoteDetail').style.display='block';
         Sfdc.canvas.client.publish(sr.client, { 
             name: 'lightingvivek.sendVal', 
