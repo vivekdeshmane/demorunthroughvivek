@@ -78,6 +78,8 @@ POSSIBILITY OF SUCH DAMAGE.
                     Sfdc.canvas.byId('status').innerHTML = data.statusText;
                     Sfdc.canvas.byId("speech-input-field").value = "";
                 });
+				Sfdc.canvas.byId('QuoteDetail').style.display='none'
+				
 				Sfdc.canvas.client.publish(sr.client, { 
             name: 'lightingvivek.sendVal', 
             payload: { value : '491'} });  
@@ -125,7 +127,7 @@ POSSIBILITY OF SUCH DAMAGE.
                     </table>
                 </div>
 				<div id="QuoteDetail">
-				Quote Detail
+				<b>Quote Detail:&nbsp</b><br/><br/>
                     <table border="1" width="100%">
                       <tr>
 				<TH>Link</TH><TH>Postcode or CLI </TH><TH> Reference ID</TH>	
