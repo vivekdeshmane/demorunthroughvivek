@@ -54,9 +54,9 @@ POSSIBILITY OF SUCH DAMAGE.
                 // Not in Iframe
                 alert("This canvas app must be included within an iframe");
             }
-
+          var sr;
             Sfdc.canvas(function() {
-                var sr = JSON.parse('<%=signedRequestJson%>');
+                sr = JSON.parse('<%=signedRequestJson%>');
                 var photoUri = sr.context.user.profileThumbnailUrl +  "?oauth_token=" + sr.client.oauthToken;
                 /**
                  * Check if we are in sites/communities.  If so, derive the url accordingly.
@@ -80,11 +80,19 @@ POSSIBILITY OF SUCH DAMAGE.
                 });
 				Sfdc.canvas.byId('QuoteDetail').style.display='none'
 				
-				Sfdc.canvas.client.publish(sr.client, { 
-            name: 'lightingvivek.sendVal', 
-            payload: { value : '491'} });  
+				//Sfdc.canvas.client.publish(sr.client, { 
+            //name: 'lightingvivek.sendVal', 
+            //payload: { value : '491'} });  
             });
  
+ 
+ function sendValueToSFDC(pValue) {
+      alert('Hinnnn')
+        Sfdc.canvas.byId('QuoteDetail').style.display='block';
+        Sfdc.canvas.client.publish(sr.client, { 
+            name: 'lightingvivek.sendVal', 
+            payload: { value : pValue} });
+    }
         </script>
     </head>
     <body>
@@ -142,7 +150,8 @@ POSSIBILITY OF SUCH DAMAGE.
             </div>
 			
 			  <div id="ipvpnOrderLink">
-			  <a title="Safe Harbor" href="/OrderDetail.jsp?hdnSignedRequest=<%=signedRequestJson%>"><strong>Quote Details</strong></a>
+			  <a title="Safe Harbor" href="#" onclick="sendValueToSFDC('491')"><strong>Show Quote Details</strong></a>
+			  <!--<a title="Safe Harbor" href="/OrderDetail.jsp?hdnSignedRequest=<%=signedRequestJson%>"><strong>Quote Details</strong></a>-->
 			  </div>
         </div>
 
