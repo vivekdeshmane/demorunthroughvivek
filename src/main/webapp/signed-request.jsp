@@ -80,7 +80,7 @@ POSSIBILITY OF SUCH DAMAGE.
                 });
 				Sfdc.canvas.client.publish(sr.client, { 
             name: 'lightingvivek.sendVal', 
-            payload: { value : '1234568'} });  
+            payload: { value : '491'} });  
             });
  
         </script>
@@ -122,6 +122,19 @@ POSSIBILITY OF SUCH DAMAGE.
                             <td width="6%"><button id="chatter-submit" type="submit"/></td>
                             <td width="10%"><span id="status" style="color:green"></span></td>
                         </tr>
+                    </table>
+                </div>
+				<div id="QuoteDetail">
+				Quote Detail
+                    <table border="1" width="100%">
+                      <tr>
+				<TH>Link</TH><TH>Postcode or CLI </TH><TH> Reference ID</TH>	
+				<TH> Access Type</TH><TH> No.Of Services</TH>
+				<TH> Price</TH><TH>Status</TH><TH>Progress</TH>
+				</tr>
+				<tr>
+				<td/><td> OL8 3EU</td><td>491</td><td>EAD</td><td>1</td><td>£6775.00</td><td>1d</td><td>Quoted</td>
+				</tr>
                     </table>
                 </div>
             </div>
