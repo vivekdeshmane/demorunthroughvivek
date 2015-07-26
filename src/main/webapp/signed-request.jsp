@@ -89,6 +89,11 @@ POSSIBILITY OF SUCH DAMAGE.
  function sendValueToSFDC(pValue) {
       
         Sfdc.canvas.byId('QuoteDetail').style.display='block';
+       
+    }
+	 function sendValueToSFDC1(pValue) {
+      
+        Sfdc.canvas.byId('QuoteDetail').style.display='block';
         Sfdc.canvas.client.publish(sr.client, { 
             name: 'lightingvivek.sendVal', 
             payload: { value : pValue} });
@@ -141,9 +146,17 @@ POSSIBILITY OF SUCH DAMAGE.
 				<TH>Link</TH><TH>Postcode or CLI </TH><TH> Reference ID</TH>	
 				<TH> Access Type</TH><TH> No.Of Services</TH>
 				<TH> Price</TH><TH>Status</TH><TH>Progress</TH>
+				<TH>Raise Case</TH>
 				</tr>
 				<tr>
-				<td/><td> OL8 3EU</td><td>491</td><td>EAD</td><td>1</td><td>£6775.00</td><td>1d</td><td>Quoted</td>
+				<td/><td> OL8 3EU</td><td>491</td><td>EAD</td><td>1</td><td>£6775.00</td><td>1d</td><td>Quoted</td><td>
+				<a title="Safe Harbor" href="#" onclick="sendValueToSFDC1('491')"><strong>Create Case</strong></a>
+				</td>
+				</tr>
+				<tr>
+				<td/><td> OL8 3SU</td><td>671</td><td>EAD</td><td>1</td><td>£7775.00</td><td>1d</td><td>Quoted</td><td>
+				<a title="Safe Harbor" href="#" onclick="sendValueToSFDC1('671')"><strong>Create Case</strong></a>
+				</td>
 				</tr>
                     </table>
                 </div>
