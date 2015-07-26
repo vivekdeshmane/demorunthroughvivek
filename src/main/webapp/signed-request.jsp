@@ -150,12 +150,12 @@ POSSIBILITY OF SUCH DAMAGE.
 				</tr>
 				<tr>
 				<td/><td> OL8 3EU</td><td>491</td><td>EAD</td><td>1</td><td>£6775.00</td><td>1d</td><td>Quoted</td><td>
-				<a title="Safe Harbor" href="#" onclick="sendValueToSFDC1('491')"><strong>Create Case</strong></a>
+				<a title="Safe Harbor" href="#" onclick="sendValueToSFDC1('491')"><strong>Raise Case</strong></a>
 				</td>
 				</tr>
 				<tr>
 				<td/><td> OL8 3SU</td><td>671</td><td>EAD</td><td>1</td><td>£7775.00</td><td>1d</td><td>Quoted</td><td>
-				<a title="Safe Harbor" href="#" onclick="sendValueToSFDC1('671')"><strong>Create Case</strong></a>
+				<a title="Safe Harbor" href="#" onclick="sendValueToSFDC1('671')"><strong>Raise Case</strong></a>
 				</td>
 				</tr>
 				
